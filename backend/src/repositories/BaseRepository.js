@@ -57,8 +57,8 @@ class BaseRepository {
       const array = Array.from(this.#cache.values()).map(entity => entity.toJSON());
       fs.writeFileSync(this.#filePath, JSON.stringify(array, null, 2), 'utf8');
     } catch (err) {
-      console.error(`[BaseRepository] Error saving ${this.#filePath}:`, err.message);
-      throw err;
+      // In serverless environments (e.g. Vercel), disk might be read-only; keep cache intact in memory
+      console.warn(`[BaseRepository] Note: Persistence to disk skipped (${err.message}). In-memory cache preserved.`);
     }
   }
 

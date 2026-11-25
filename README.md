@@ -146,7 +146,55 @@ The Python server will start at `http://127.0.0.1:5000`. Open `frontend/index.ht
 
 ---
 
-## 🧪 5. Automated Tests
+## ☁️ 5. Hosting on Vercel
+
+The project is pre-configured with `vercel.json` and `api/index.js` for instant deployment on [Vercel](https://vercel.com).
+
+### Method 1: Deploy via GitHub & Vercel Dashboard (Recommended & Easiest)
+1. **Push your code to GitHub:**
+   ```bash
+   git init
+   git add .
+   git commit -m "EcoSpark Hub portal with Vercel configuration"
+   git branch -M main
+   git remote add origin https://github.com/<your-username>/ecospark-hub.git
+   git push -u origin main
+   ```
+2. **Import into Vercel:**
+   - Log in to your [Vercel Dashboard](https://vercel.com/dashboard).
+   - Click **"Add New..."** → **"Project"**.
+   - Select your GitHub repository from the list.
+3. **Configure & Deploy:**
+   - **Framework Preset:** Leave as **Other**.
+   - **Root Directory:** `./` (default).
+   - Vercel automatically detects `vercel.json`, which maps the `/api/*` routes to serverless functions and serves `frontend/` at the root URL.
+   - Click **"Deploy"**.
+4. **Done!** Vercel will give you a live production URL (e.g. `https://ecospark-hub.vercel.app`).
+
+### Method 2: Deploy via Vercel CLI
+```powershell
+# 1. Install Vercel CLI globally (if not already installed)
+npm i -g vercel
+
+# 2. Login to your Vercel account
+vercel login
+
+# 3. Deploy from project root
+vercel
+
+# 4. Deploy to production
+vercel --prod
+```
+
+### Method 3: Static-Only Fast Track Deployment
+If you only want to host the frontend without serverless functions:
+- In Vercel Project Settings, set **Root Directory** to `frontend`.
+- Click **Deploy**.
+- The portal will run completely standalone powered by `LocalStorageAdapter.js` with 100% features: equipment search, checkouts, returns, document tree, preview modal, and offline persistence.
+
+---
+
+## 🧪 6. Automated Tests
 To execute the automated test suite verifying domain encapsulation, business invariants, and checkout workflows:
 ```powershell
 cd backend
@@ -155,7 +203,7 @@ node tests/backend.test.js
 
 ---
 
-## 👥 6. Built for EcoSpark Innovations
+## 👥 7. Built for EcoSpark Innovations
 - **Classroom Tools:** Smart pens, charging hubs, document cameras, coding kits.
 - **Lab & MakerLab:** 3D prototyper, oscilloscopes, digital microscopes.
 - **Presentation & Computing:** Solar classroom projectors, high-performance laptops.

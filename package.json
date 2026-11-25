@@ -1,0 +1,22 @@
+{
+  "name": "ecospark-internal-hub",
+  "version": "1.0.0",
+  "description": "EcoSpark Innovations Internal Operations Hub & Gear Manager",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "node backend/tests/backend.test.js"
+  },
+  "keywords": [
+    "ecospark",
+    "inventory",
+    "internal-hub",
+    "clean-architecture",
+    "vercel"
+  ],
+  "author": "EcoSpark Innovations Tech Team",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
