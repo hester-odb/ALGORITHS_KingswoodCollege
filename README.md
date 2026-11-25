@@ -160,3 +160,6 @@ node tests/backend.test.js
 - **Lab & MakerLab:** 3D prototyper, oscilloscopes, digital microscopes.
 - **Presentation & Computing:** Solar classroom projectors, high-performance laptops.
 - **Knowledge Base:** Lesson plans, circuit schematics, brand assets, safety policies.
+
+
+oshadhaekanayake09@outlook.com
