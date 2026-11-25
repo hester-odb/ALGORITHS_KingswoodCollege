@@ -1,0 +1,52 @@
+[
+  {
+    "id": "folder-001",
+    "createdAt": "2026-10-10T08:00:00.000Z",
+    "updatedAt": "2026-10-10T08:00:00.000Z",
+    "name": "Classroom Kits & Guides",
+    "parentId": null,
+    "icon": "book-open",
+    "color": "#10B981",
+    "description": "Teacher manuals, lesson plans, and classroom activity guides for EcoSpark tools."
+  },
+  {
+    "id": "folder-002",
+    "createdAt": "2026-10-10T08:15:00.000Z",
+    "updatedAt": "2026-10-10T08:15:00.000Z",
+    "name": "Hardware Schematics & 3D Specs",
+    "parentId": null,
+    "icon": "cpu",
+    "color": "#06B6D4",
+    "description": "Circuits, PCB layouts, CAD diagrams, and 3D printing STL models."
+  },
+  {
+    "id": "folder-003",
+    "createdAt": "2026-10-10T08:30:00.000Z",
+    "updatedAt": "2026-10-10T08:30:00.000Z",
+    "name": "Design & Brand Notes",
+    "parentId": null,
+    "icon": "palette",
+    "color": "#8B5CF6",
+    "description": "Brand colors, typography, UI wireframes, and design system components."
+  },
+  {
+    "id": "folder-004",
+    "createdAt": "2026-10-10T08:45:00.000Z",
+    "updatedAt": "2026-10-10T08:45:00.000Z",
+    "name": "Office Policies & Onboarding",
+    "parentId": null,
+    "icon": "shield-check",
+    "color": "#F59E0B",
+    "description": "Staff handbooks, equipment check-out rules, and safety protocols."
+  },
+  {
+    "id": "folder-005",
+    "createdAt": "2026-10-10T09:00:00.000Z",
+    "updatedAt": "2026-10-10T09:00:00.000Z",
+    "name": "Software & Firmware",
+    "parentId": null,
+    "icon": "code",
+    "color": "#3B82F6",
+    "description": "API specifications, microcontroller source code, and release logs."
+  }
+]

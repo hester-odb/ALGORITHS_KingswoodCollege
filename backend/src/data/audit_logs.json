@@ -1,0 +1,82 @@
+[
+  {
+    "id": "audit-001",
+    "createdAt": "2026-11-22T14:00:00.000Z",
+    "updatedAt": "2026-11-22T14:00:00.000Z",
+    "action": "CHECKOUT",
+    "entityType": "INVENTORY",
+    "entityId": "item-010",
+    "entityName": "VR Classroom Explorer Headset Set (4x)",
+    "performedBy": "Kevin O'Connor",
+    "details": {
+      "assignedTo": "Kevin O'Connor",
+      "department": "Product Design",
+      "expectedReturnDate": "2026-11-25",
+      "notes": "Testing interactive VR tour"
+    }
+  },
+  {
+    "id": "audit-002",
+    "createdAt": "2026-11-21T09:30:00.000Z",
+    "updatedAt": "2026-11-21T09:30:00.000Z",
+    "action": "CHECKOUT",
+    "entityType": "INVENTORY",
+    "entityId": "item-005",
+    "entityName": "RoboSpark Modular STEM Coding Kit",
+    "performedBy": "Aisha Patel",
+    "details": {
+      "assignedTo": "Aisha Patel",
+      "department": "Community Outreach",
+      "expectedReturnDate": "2026-11-27",
+      "notes": "Classroom workshop"
+    }
+  },
+  {
+    "id": "audit-003",
+    "createdAt": "2026-11-20T11:00:00.000Z",
+    "updatedAt": "2026-11-20T11:00:00.000Z",
+    "action": "CHECKOUT",
+    "entityType": "INVENTORY",
+    "entityId": "item-012",
+    "entityName": "SparkPrint Portable 3D Rapid Prototyper",
+    "performedBy": "Marcus Brody",
+    "details": {
+      "assignedTo": "Marcus Brody",
+      "department": "Hardware Engineering",
+      "expectedReturnDate": "2026-11-26",
+      "notes": "Printing pen holder prototypes"
+    }
+  },
+  {
+    "id": "audit-004",
+    "createdAt": "2026-11-19T13:00:00.000Z",
+    "updatedAt": "2026-11-19T13:00:00.000Z",
+    "action": "CHECKOUT",
+    "entityType": "INVENTORY",
+    "entityId": "item-003",
+    "entityName": "AirSpark Classroom Environmental Sensor Hub",
+    "performedBy": "Marcus Brody",
+    "details": {
+      "assignedTo": "Marcus Brody",
+      "department": "Hardware Engineering",
+      "expectedReturnDate": "2026-11-25",
+      "notes": "Testing CO2 calibration"
+    }
+  },
+  {
+    "id": "audit-005",
+    "createdAt": "2026-11-18T10:15:00.000Z",
+    "updatedAt": "2026-11-18T10:15:00.000Z",
+    "action": "CHECKOUT",
+    "entityType": "INVENTORY",
+    "entityId": "item-001",
+    "entityName": "SolarBeam Mini Classroom Projector",
+    "performedBy": "Sarah Chen",
+    "details": {
+      "assignedTo": "Sarah Chen",
+      "department": "Education & Curriculum",
+      "expectedReturnDate": "2026-11-26",
+      "notes": "Interactive science demo"
+    }
+  }
+]

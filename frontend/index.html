@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoSpark Hub | Internal Operations & Gear Inventory</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Design System & Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="hub-header" id="hubNavbarContainer">
+    <!-- Rendered by Navbar.js -->
+  </header>
+
+  <!-- Main Application Container -->
+  <main class="app-container">
+    <!-- Live KPI Summary Bar -->
+    <section id="quickStatsContainer">
+      <!-- Rendered by QuickStats.js -->
+    </section>
+
+    <!-- Tab 1: Supplies & Gear Inventory -->
+    <section id="inventorySection">
+      <div id="inventoryViewContainer">
+        <!-- Rendered by InventoryView.js -->
+      </div>
+    </section>
+
+    <!-- Tab 2: Document & Knowledge Hub -->
+    <section id="documentSection" class="d-none">
+      <div id="documentExplorerContainer">
+        <!-- Rendered by DocumentExplorer.js -->
+      </div>
+    </section>
+
+    <!-- Tab 3: Operational Activity Log -->
+    <section id="activitySection" class="d-none">
+      <div id="activityViewContainer">
+        <!-- Rendered by ActivityLogView.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Hub Footer -->
+  <footer class="hub-footer">
+    <div style="max-width: 1380px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: gap: 1rem;">
+      <div>
+        <strong>EcoSpark Innovations</strong> • Internal Operations Hub & Gear Manager
+      </div>
+      <div style="font-size: 0.78rem;">
+        Designed for Classroom & Local Office Operations • Built with Strict OOP Encapsulation
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts (Encapsulated Layered Architecture) -->
+  <script src="js/utils/icons.js"></script>
+  <script src="js/utils/formatters.js"></script>
+  <script src="js/models/ItemViewModel.js"></script>
+  <script src="js/models/DocumentViewModel.js"></script>
+  <script src="js/services/LocalStorageAdapter.js"></script>
+  <script src="js/services/ApiClient.js"></script>
+  <script src="js/services/InventoryService.js"></script>
+  <script src="js/services/DocumentService.js"></script>
+  <script src="js/state/Store.js"></script>
+  <script src="js/components/Toast.js"></script>
+  <script src="js/components/Navbar.js"></script>
+  <script src="js/components/QuickStats.js"></script>
+  <script src="js/components/InventoryView.js"></script>
+  <script src="js/components/DocumentExplorer.js"></script>
+  <script src="js/components/ActivityLogView.js"></script>
+  <script src="js/components/Modals.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

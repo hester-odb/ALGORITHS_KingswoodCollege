@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dellBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="dellScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#dellBg)" />
+
+  <!-- Laptop Display -->
+  <rect x="90" y="40" width="220" height="125" rx="8" fill="#1E293B" stroke="#94A3B8" stroke-width="2" />
+  <rect x="100" y="50" width="200" height="105" rx="4" fill="url(#dellScreen)" stroke="#818CF8" stroke-width="1" />
+  
+  <!-- CAD 3D wireframe on display -->
+  <polygon points="170,80 230,80 250,110 190,110" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+  <polygon points="170,80 170,120 190,145 190,110" fill="none" stroke="#10B981" stroke-width="1.5" />
+  <polygon points="230,80 230,120 250,145 250,110" fill="none" stroke="#F59E0B" stroke-width="1.5" />
+  <line x1="170" y1="120" x2="230" y2="120" stroke="#38BDF8" stroke-width="1.5" />
+  <line x1="190" y1="145" x2="250" y2="145" stroke="#38BDF8" stroke-width="1.5" />
+
+  <!-- Base / Chassis -->
+  <path d="M60 165 L340 165 L320 190 L80 190 Z" fill="#334155" stroke="#94A3B8" stroke-width="2" />
+  <rect x="100" y="168" width="200" height="12" rx="3" fill="#1E293B" />
+  <rect x="175" y="182" width="50" height="5" rx="2" fill="#1E293B" />
+
+  <!-- Label text -->
+  <rect x="100" y="205" width="200" height="26" rx="13" fill="#1E293B" stroke="#818CF8" stroke-width="1.5" />
+  <text x="200" y="223" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#E0E7FF" text-anchor="middle" letter-spacing="1">DELL PRECISION WORKSTATION</text>
+</svg>

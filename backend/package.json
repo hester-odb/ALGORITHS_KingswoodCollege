@@ -1,0 +1,23 @@
+{
+  "name": "ecospark-backend",
+  "version": "1.0.0",
+  "description": "EcoSpark Innovations Internal Operations Hub - Backend API Service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/backend.test.js"
+  },
+  "keywords": [
+    "ecospark",
+    "inventory",
+    "documents",
+    "internal-hub",
+    "encapsulation",
+    "clean-architecture"
+  ],
+  "author": "EcoSpark Innovations Tech Team",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

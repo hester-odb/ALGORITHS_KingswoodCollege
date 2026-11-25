@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSens" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#bgSens)" />
+
+  <!-- Concentric Sensing Waves -->
+  <circle cx="200" cy="105" r="85" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="4 4" opacity="0.4" />
+  <circle cx="200" cy="105" r="65" fill="none" stroke="#06B6D4" stroke-width="1.5" opacity="0.6" />
+  <circle cx="200" cy="105" r="45" fill="url(#ringGlow)" />
+
+  <!-- Sensor Hub Enclosure -->
+  <rect x="145" y="55" width="110" height="100" rx="20" fill="#1E293B" stroke="#06B6D4" stroke-width="3" />
+  
+  <!-- Digital Screen on Sensor -->
+  <rect x="160" y="70" width="80" height="42" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1.5" />
+  <text x="200" y="88" font-family="monospace" font-size="12" font-weight="700" fill="#10B981" text-anchor="middle">CO2: 412</text>
+  <text x="200" y="103" font-family="monospace" font-size="10" font-weight="700" fill="#38BDF8" text-anchor="middle">24°C • 48%</text>
+
+  <!-- Status LED bar -->
+  <circle cx="175" cy="128" r="4" fill="#10B981" />
+  <circle cx="200" cy="128" r="4" fill="#06B6D4" />
+  <circle cx="225" cy="128" r="4" fill="#10B981" />
+
+  <!-- Sensor Air Inlets -->
+  <line x1="145" y1="90" x2="135" y2="90" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" />
+  <line x1="145" y1="100" x2="132" y2="100" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" />
+  <line x1="145" y1="110" x2="135" y2="110" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" />
+
+  <line x1="255" y1="90" x2="265" y2="90" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" />
+  <line x1="255" y1="100" x2="268" y2="100" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" />
+  <line x1="255" y1="110" x2="265" y2="110" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Label text -->
+  <rect x="110" y="195" width="180" height="26" rx="13" fill="#083344" stroke="#06B6D4" stroke-width="1.5" />
+  <text x="200" y="213" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#BAE6FD" text-anchor="middle" letter-spacing="1">AIRSPARK SENSOR HUB</text>
+</svg>
