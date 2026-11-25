@@ -9,7 +9,7 @@ class ApiClient {
   constructor() {
     this.#baseUrl =
       window.ECOSPARK_API_URL ||
-        (window.location.protocol === 'files') ? 'http://localhost:5000/api' : '/api'; z
+        (window.location.protocol === 'files') ? 'http://localhost:5000/api' : '/api';
     this.#isOnlineBackend = false;
   }
 
