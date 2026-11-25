@@ -24,8 +24,12 @@ class BaseRepository {
   }
 
   #ensureDataDirExists(dataDir) {
-    if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
+    try {
+      if (!fs.existsSync(dataDir)) {
+        fs.mkdirSync(dataDir, { recursive: true });
+      }
+    } catch (err) {
+      console.warn(`[BaseRepository] Note: Data directory ${dataDir} could not be created. Persistence may fail.`);
     }
   }
 

@@ -18,6 +18,17 @@ class Middleware {
   }
 
   static parseJsonBody(req) {
+    if (req.body !== undefined) {
+      if (typeof req.body === 'string') {
+        try {
+          return Promise.resolve(req.body.trim() ? JSON.parse(req.body) : {});
+        } catch (err) {
+          return Promise.reject(new Error(`Invalid JSON format: ${err.message}`));
+        }
+      }
+      return Promise.resolve(req.body || {});
+    }
+
     return new Promise((resolve, reject) => {
       let body = '';
       req.on('data', chunk => {
